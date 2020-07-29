@@ -18,7 +18,7 @@ Lifeforms are arranged into categories based on their configurations (excluding 
 
 """
 
-from .static import Box, Seed, Moon, Kite
+from .static import Box, Seed, Moon, Kite, Eater1
 from .oscillators import Blinker, Toad, Pulsar, FigureEight, Beacon, Pentadecathlon
 from .gliders import Glider
 from .growers import Unbounded
@@ -30,6 +30,7 @@ __all__ = [
     "Seed",
     "Moon",
     "Kite",
+    "Eater1",
     "Blinker",
     "Toad",
     "Pulsar",

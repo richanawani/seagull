@@ -56,3 +56,15 @@ class Kite(Lifeform):
     @property
     def layout(self) -> np.ndarray:
         return np.array([[1, 1, 0], [1, 0, 1], [0, 1, 0]])
+
+
+class Eater1(Lifeform):
+    """A static Eater"""
+
+    def __init__(self):
+        """Initialize the class"""
+        super(Eater1, self).__init__()
+
+    @property
+    def layout(self) -> np.ndarray:
+        return np.array([[1, 1, 0, 0], [1, 0, 1, 0], [0, 0, 1, 0], [0, 0, 1, 1]])
