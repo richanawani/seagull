@@ -67,4 +67,25 @@ class Eater1(Lifeform):
 
     @property
     def layout(self) -> np.ndarray:
-        return np.array([[1, 1, 0, 0], [1, 0, 1, 0], [0, 0, 1, 0], [0, 0, 1, 1]])
+        return np.array(
+            [[1, 1, 0, 0], [1, 0, 1, 0], [0, 0, 1, 0], [0, 0, 1, 1]]
+        )
+
+
+class SwitchEngine(Lifeform):
+    """A static Eater"""
+
+    def __init__(self):
+        """Initialize the class"""
+        super(SwitchEngine, self).__init__()
+
+    @property
+    def layout(self) -> np.ndarray:
+        return np.array(
+            [
+                [0, 1, 0, 1, 0, 0],
+                [1, 0, 0, 0, 0, 0],
+                [0, 1, 0, 0, 1, 0],
+                [0, 0, 0, 1, 1, 1],
+            ]
+        )
